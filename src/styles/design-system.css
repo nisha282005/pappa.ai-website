@@ -1,0 +1,518 @@
+/**
+ * Pappa.ai Design System Tokens
+ * Single source of truth for colors, typography, radii, shadows, and spacing.
+ */
+
+:root {
+  /* Brand & Core Colors */
+  --color-primary: #4F46E5;
+  --color-primary-hover: #4338CA;
+  --color-secondary: #7C3AED;
+  --color-brand-soft: #EEF2FF;
+  --color-background: #FFFFFF;
+  --color-surface: #FFFFFF;
+  --color-border: #E5E7EB;
+  --color-focus: #6366F1;
+
+  /* Text Colors */
+  --color-text-primary: #0F172A;
+  --color-text-body: #334155;
+  --color-text-secondary: #475569;
+  --color-text-muted: #9CA3AF;
+
+  /* Semantic Feedback & Tags */
+  --color-success-bg: #ECFDF5;
+  --color-success-text: #047857;
+
+  --color-warning-bg: #FFFBEB;
+  --color-warning-text: #B45309;
+
+  --color-info-bg: #DBEAFE;
+  --color-info-text: #1D4ED8;
+
+  --color-purple-tag-bg: #FAF5FF;
+  --color-purple-tag-text: #7E22CE;
+
+  /* Border Radii */
+  --radius-container: 16px;
+  --radius-component: 12px;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* 4px-based Spacing Scale */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+
+  /* Global Container Tokens */
+  --container-max-width: 1440px;
+  --container-px-2xl: 64px; /* Large desktop (1440px+): 64px */
+  --container-px-xl: 48px;  /* Laptop (1280px): 48px */
+  --container-px-lg: 40px;  /* Small desktop (1024px): 40px */
+  --container-px-md: 32px;  /* Tablet (768px): 32px */
+  --container-px-xs: 16px;  /* Mobile (390px and below): 16px */
+
+  /* Section Vertical Padding Tokens */
+  --section-py-desktop: 72px;
+  --section-py-tablet: 56px;
+  --section-py-mobile: 40px;
+  --section-py-xs: 32px;
+
+  --section-compact-py-desktop: 48px;
+  --section-compact-py-mobile: 32px;
+
+  --hero-py-desktop: 72px;
+  --hero-py-mobile: 40px;
+
+  /* Content & Hierarchy Spacing Tokens */
+  --gap-label-to-heading: 12px;
+  --gap-heading-to-desc: 16px;
+  --gap-desc-to-content: 24px;
+  --gap-heading-group-desktop: 32px;
+  --gap-heading-group-mobile: 24px;
+  --card-padding-desktop: 24px;
+  --card-padding-tablet: 20px;
+  --card-padding-mobile: 16px;
+  --cards-gap-desktop: 24px;
+  --cards-gap-mobile: 16px;
+  --icon-text-gap: 16px;
+  --form-field-gap: 16px;
+  --btn-min-height: 44px;
+
+  /* Typography Scale Tokens (Standardized System) */
+  --font-family: 'Plus Jakarta Sans', sans-serif;
+  --font-h1-desktop: 48px;
+  --font-h1-tablet: 40px;
+  --font-h1-mobile: 32px;
+  --font-h1-line-height: 1.15;
+  --font-h1-weight: 700;
+
+  --font-h2-desktop: 36px;
+  --font-h2-tablet: 30px;
+  --font-h2-mobile: 26px;
+  --font-h2-line-height: 1.2;
+  --font-h2-weight: 700;
+
+  --font-h3-desktop: 22px;
+  --font-h3-tablet: 20px;
+  --font-h3-mobile: 18px;
+  --font-h3-line-height: 1.35;
+  --font-h3-weight: 600;
+
+  --font-body-desktop: 16px;
+  --font-body-mobile: 15px;
+  --font-body-line-height: 1.65;
+  --font-body-weight: 400;
+
+  --font-supporting-desktop: 15px;
+  --font-supporting-mobile: 14px;
+  --font-supporting-line-height: 1.55;
+
+  --font-nav-desktop: 14px;
+  --font-nav-mobile: 13px;
+  --font-nav-weight: 500;
+
+  --font-btn: 14px;
+  --font-btn-weight: 600;
+
+  --font-eyebrow-desktop: 12px;
+  --font-eyebrow-mobile: 11px;
+  --font-eyebrow-weight: 700;
+  --font-eyebrow-spacing: 0.01em;
+
+  --font-caption: 12px;
+  --font-caption-weight: 500;
+}
+
+html.dark,
+:root.dark,
+.dark {
+  /* Brand & Core Colors */
+  --color-primary: #818CF8;
+  --color-primary-hover: #6366F1;
+  --color-secondary: #A855F7;
+  --color-brand-soft: rgba(99, 102, 241, 0.15);
+  --color-background: #0B0F19;
+  --color-surface: #111827;
+  --color-surface-hover: #1E293B;
+  --color-border: #1E293B;
+  --color-focus: #818CF8;
+
+  /* Text Colors */
+  --color-text-primary: #F8FAFC;
+  --color-text-body: #CBD5E1;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+
+  /* Semantic Feedback & Tags */
+  --color-success-bg: rgba(16, 185, 129, 0.15);
+  --color-success-text: #34D399;
+
+  --color-warning-bg: rgba(245, 158, 11, 0.15);
+  --color-warning-text: #FBBF24;
+
+  --color-info-bg: rgba(59, 130, 246, 0.15);
+  --color-info-text: #60A5FA;
+
+  --color-purple-tag-bg: rgba(168, 85, 247, 0.15);
+  --color-purple-tag-text: #C084FC;
+
+  /* Shadows for Dark Mode */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Tailwind Theme Extension */
+@theme {
+  --color-primary: #4F46E5;
+  --color-primary-hover: #4338CA;
+  --color-secondary: #7C3AED;
+  --color-brand-soft: #EEF2FF;
+  --color-background: #FFFFFF;
+  --color-surface: #FFFFFF;
+  --color-border: #E5E7EB;
+  --color-focus: #6366F1;
+
+  --color-text-primary: #0F172A;
+  --color-text-body: #334155;
+  --color-text-secondary: #475569;
+  --color-text-muted: #9CA3AF;
+
+  --color-success-bg: #ECFDF5;
+  --color-success-text: #047857;
+
+  --color-warning-bg: #FFFBEB;
+  --color-warning-text: #B45309;
+
+  --color-info-bg: #DBEAFE;
+  --color-info-text: #1D4ED8;
+
+  --color-purple-tag-bg: #FAF5FF;
+  --color-purple-tag-text: #7E22CE;
+
+  --radius-container: 16px;
+  --radius-component: 12px;
+  --radius-pill: 9999px;
+
+  --shadow-pappa-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-pappa-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-pappa-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Design System Component Base Classes */
+.pappa-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-container);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease-in-out;
+}
+
+.pappa-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.pappa-btn-base {
+  min-height: 44px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pappa-btn-base:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Global Responsive Container & Spacing Utilities
+   ========================================================================== */
+
+/* 1. Global Container */
+.pappa-container {
+  width: 100%;
+  max-width: var(--container-max-width, 1440px);
+  margin-inline: auto;
+  box-sizing: border-box;
+  padding-inline: 16px;
+}
+
+@media (min-width: 768px) {
+  .pappa-container {
+    padding-inline: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pappa-container {
+    padding-inline: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .pappa-container {
+    padding-inline: 48px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pappa-container {
+    padding-inline: 64px;
+  }
+}
+
+/* 2. Standard Major Section Vertical Padding */
+.pappa-section-py {
+  padding-block: var(--section-py-mobile, 40px);
+}
+
+@media (max-width: 375px) {
+  .pappa-section-py {
+    padding-block: var(--section-py-xs, 32px);
+  }
+}
+
+@media (min-width: 768px) {
+  .pappa-section-py {
+    padding-block: var(--section-py-tablet, 56px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .pappa-section-py {
+    padding-block: var(--section-py-desktop, 72px);
+  }
+}
+
+/* 3. Compact Section Vertical Padding */
+.pappa-section-py-compact {
+  padding-block: var(--section-compact-py-mobile, 32px);
+}
+
+@media (min-width: 1024px) {
+  .pappa-section-py-compact {
+    padding-block: var(--section-compact-py-desktop, 48px);
+  }
+}
+
+/* 4. Hero Section Vertical Padding */
+.pappa-hero-py {
+  padding-block: var(--hero-py-mobile, 40px);
+}
+
+@media (min-width: 768px) {
+  .pappa-hero-py {
+    padding-block: var(--section-py-tablet, 56px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .pappa-hero-py {
+    padding-block: var(--hero-py-desktop, 72px);
+  }
+}
+
+/* ==========================================================================
+   Standardized Typography System Classes
+   ========================================================================== */
+
+/* Hero H1: 48px desktop, 40px tablet, 32px mobile; font-weight 700; line-height 1.15 */
+.pappa-h1 {
+  font-family: var(--font-family);
+  font-size: clamp(32px, 2.5vw + 16px, 48px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  color: var(--color-text-primary);
+}
+@media (min-width: 1024px) {
+  .pappa-h1 {
+    font-size: 48px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .pappa-h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .pappa-h1 {
+    font-size: 32px;
+  }
+}
+
+/* Section H2: 36px desktop, 30px tablet, 26px mobile; font-weight 700; line-height 1.2 */
+.pappa-h2 {
+  font-family: var(--font-family);
+  font-size: clamp(26px, 1.8vw + 14px, 36px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+}
+@media (min-width: 1024px) {
+  .pappa-h2 {
+    font-size: 36px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .pappa-h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .pappa-h2 {
+    font-size: 26px;
+  }
+}
+
+/* Card H3: 22px desktop, 20px tablet, 18px mobile; font-weight 600; line-height 1.35 */
+.pappa-h3 {
+  font-family: var(--font-family);
+  font-size: clamp(18px, 0.8vw + 14px, 22px);
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  color: var(--color-text-primary);
+}
+@media (min-width: 1024px) {
+  .pappa-h3 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .pappa-h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .pappa-h3 {
+    font-size: 18px;
+  }
+}
+
+/* Body text: 16px desktop, 15px mobile; font-weight 400; line-height 1.65 */
+.pappa-body {
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--color-text-body);
+}
+@media (min-width: 1024px) {
+  .pappa-body {
+    font-size: 16px;
+  }
+}
+
+/* Supporting text: 15px desktop, 14px mobile; line-height 1.55 */
+.pappa-supporting {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+}
+@media (min-width: 1024px) {
+  .pappa-supporting {
+    font-size: 15px;
+  }
+}
+
+/* Navigation: 14px desktop, 13px mobile; font-weight 500 */
+.pappa-nav {
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (min-width: 1024px) {
+  .pappa-nav {
+    font-size: 14px;
+  }
+}
+
+/* Buttons: 14px; font-weight 600 */
+.pappa-btn-text {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* Eyebrow labels: Title Case (never all caps); 13px desktop, 12px mobile; font-weight 700 */
+.pappa-eyebrow {
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+@media (min-width: 1024px) {
+  .pappa-eyebrow {
+    font-size: 13px;
+  }
+}
+
+/* Captions and metadata: 12px; font-weight 500 */
+.pappa-caption {
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+/* ==========================================================================
+   Mobile hero spacing: hero content starts 16px below the fixed header.
+   The header is 56px (64px from 640px) plus its 1px bottom border (see Navbar).
+   - .pappa-hero-under-header: pages whose hero sits behind a transparent
+     header (Home, About), so the padding includes the header height.
+   - .pappa-hero-after-spacer: pages that already have a spacer under the
+     header (Features, How it works, FAQ, Contact).
+   Unlayered, so it overrides Tailwind padding utilities below 768px only.
+   ========================================================================== */
+:root {
+  --header-height: 73px;
+  --hero-gap-mobile: 16px;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --header-height: 81px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .pappa-hero-under-header {
+    padding-top: calc(var(--header-height) + var(--hero-gap-mobile));
+  }
+
+  /* The spacer is 72px but the header is 73px with its border: add that 1px back. */
+  .pappa-hero-after-spacer {
+    padding-top: calc(var(--hero-gap-mobile) + 1px);
+  }
+}

@@ -1,0 +1,86 @@
+export const AUDIENCES = [
+  {
+    id: 'admins',
+    title: 'School Administrators',
+    description: 'Centralized control over operations, finance, compliance, and staff administration.',
+  },
+  {
+    id: 'teachers',
+    title: 'Educators & Staff',
+    description: 'Time-saving tools for lesson planning, grading, student records, and parent communication.',
+  },
+  {
+    id: 'parents',
+    title: 'Parents & Guardians',
+    description: 'Real-time visibility into academic progress, fee schedules, safety, and school events.',
+  },
+  {
+    id: 'volunteers',
+    title: 'Volunteers & Community',
+    description: 'Coordinated involvement in school activities, events, and campus initiatives.',
+  },
+];
+
+export const WHO_ITS_FOR_INSTITUTIONS = [
+  {
+    id: 'schools',
+    title: 'Schools',
+    iconName: 'GraduationCap',
+    image: '/images/audiences/schools.jpg',
+    alt: 'Modern school campus building',
+    desktopOffset: 'lg:mt-9',
+    connectorHeight: 'lg:h-9',
+    mobileOffset: 'mt-3 sm:mt-4',
+  },
+  {
+    id: 'colleges',
+    title: 'Colleges',
+    iconName: 'Landmark',
+    image: '/images/audiences/colleges.jpg',
+    alt: 'Collegiate university campus building with bell tower',
+    desktopOffset: 'lg:mt-0',
+    connectorHeight: 'lg:h-5',
+    mobileOffset: 'mt-0',
+  },
+  {
+    id: 'academies',
+    title: 'Academies',
+    iconName: 'BookOpen',
+    image: '/images/audiences/academies.jpg',
+    alt: 'Prestigious academy campus building with colonnade',
+    desktopOffset: 'lg:mt-7',
+    connectorHeight: 'lg:h-8',
+    mobileOffset: 'mt-3 sm:mt-4',
+  },
+  {
+    id: 'training-centers',
+    title: 'Training Centers',
+    iconName: 'Monitor',
+    image: '/images/audiences/training-centers.jpg',
+    alt: 'Modern executive training and learning facility',
+    desktopOffset: 'lg:mt-2',
+    connectorHeight: 'lg:h-6',
+    mobileOffset: 'mt-0',
+  },
+  {
+    id: 'event-programs',
+    title: 'Event-Based Programs',
+    iconName: 'Calendar',
+    image: '/images/audiences/event-programs.jpg',
+    alt: 'Campus athletic and event sports facilities',
+    desktopOffset: 'lg:mt-0',
+    connectorHeight: 'lg:h-5',
+    mobileOffset: 'mt-3 sm:mt-4',
+  },
+  {
+    id: 'community-learning',
+    title: 'Community Learning',
+    iconName: 'Users',
+    image: '/images/audiences/community-learning.jpg',
+    alt: 'Modern community learning center pavilion',
+    desktopOffset: 'lg:mt-10',
+    connectorHeight: 'lg:h-10',
+    mobileOffset: 'mt-0',
+  },
+];
+
