@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4F46E5" />
+  <title>Pappa.ai — One Platform for Your Whole Institution</title>
+  <meta name="description"
+    content="Pappa.ai brings the everyday running of schools, academies, training centers, and community programs into one place for admins, teachers, and families." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Pappa.ai" />
+  <meta property="og:title" content="Pappa.ai — One Platform for Your Whole Institution" />
+  <meta property="og:description"
+    content="Pappa.ai brings the everyday running of schools, academies, training centers, and community programs into one place for admins, teachers, and families." />
+  <meta property="og:image" content="/favicon.svg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Pappa.ai — One Platform for Your Whole Institution" />
+  <meta name="twitter:description"
+    content="Pappa.ai brings the everyday running of schools, academies, training centers, and community programs into one place for admins, teachers, and families." />
+  <meta name="twitter:image" content="/favicon.svg" />
+
+  <!-- Theme Flash Prevention -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('pappa-theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (stored === 'dark' || (!stored && prefersDark)) {
+          document.documentElement.classList.add('dark');
+          document.documentElement.style.colorScheme = 'dark';
+        } else {
+          document.documentElement.classList.remove('dark');
+          document.documentElement.style.colorScheme = 'light';
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+
+<body class="bg-background text-text-body font-sans antialiased min-h-screen">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

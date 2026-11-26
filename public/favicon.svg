@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="pappa-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="12" fill="url(#pappa-grad)"/>
+  <path d="M16 14h9c4.418 0 8 3.582 8 8 0 4.418-3.582 8-8 8h-4v6h-5V14zm5 11h4c1.657 0 3-1.343 3-3s-1.343-3-3-3h-4v6z" fill="#ffffff"/>
+</svg>

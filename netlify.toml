@@ -1,0 +1,12 @@
+# Netlify settings for the Pappa.ai website (Vite + React).
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# The site uses client-side routing (React Router), so every path
+# (/about, /features, a refresh on /contact, ...) must serve index.html.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

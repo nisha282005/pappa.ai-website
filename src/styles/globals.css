@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@import "@fontsource/plus-jakarta-sans/400.css";
+@import "@fontsource/plus-jakarta-sans/500.css";
+@import "@fontsource/plus-jakarta-sans/600.css";
+@import "@fontsource/plus-jakarta-sans/700.css";
+@import "@fontsource/plus-jakarta-sans/800.css";
+
+@import "./design-system.css";
+@import "./animations.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+  color: var(--color-text-body);
+  background-color: var(--color-background);
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  font-size: var(--font-size-body, 14.5px);
+  line-height: 1.55;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Accessibility: Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Hero Image Subtle Elegant Curved Top Edge
+ * - Gentle, smooth upward arch along the top edge only
+ * - Bottom edge remains completely straight and seamless (y = 100%)
+ * - Subtle arch depth (~32px on desktop, ~20px on tablet, ~10px on mobile)
+ * - Zero borders, zero outlines, blends organically into white hero background
+ */
+.hero-curved-top {
+  clip-path: ellipse(180% 100% at 50% 100%);
+  -webkit-clip-path: ellipse(180% 100% at 50% 100%);
+}
+
+@media (min-width: 640px) {
+  .hero-curved-top {
+    clip-path: ellipse(155% 100% at 50% 100%);
+    -webkit-clip-path: ellipse(155% 100% at 50% 100%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-curved-top {
+    clip-path: ellipse(135% 100% at 50% 100%);
+    -webkit-clip-path: ellipse(135% 100% at 50% 100%);
+  }
+}
